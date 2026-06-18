@@ -44,7 +44,7 @@ The site is divided into logical, SEO-optimized sections inside [index.html](fil
 | `hero` | Hero Showcase | Engaging titles, primary badges, visa statistics, and dynamic inline SVG illustration. |
 | `about` | Corporate Profile | Circular Yoshino-style decorative window displaying Mt. Fuji. Lists credentials (Native instruction, direct school partnerships). |
 | `why-choose-us`| Value Pillars | 6-card interactive grid showcasing NAT-Test prep, visa filing, and pre-departure briefings. |
-| `courses` | Language Academy | Cards outlining N5, N4, and Spoken Japanese programs (duration, schedule, syllabus details). |
+| `courses` | Language Academy | Cards outlining N5, N4, N3, JFT, SSW, and Spoken Japanese programs (duration, schedule, syllabus details). |
 | `study-in-japan`| Pathway Timeline | Vertical stepper guide representing assessing, language learning, COE application, and visa stamps. |
 | `jobs` | Job Placements | Grid of corporate recruiter opportunities in IT, Caregiving (SSW), Hospitality, and Engineering. |
 | `culture` | Cultural Focus | Highlights supplementary classes: Anime translation, Shodo calligraphy, Sado tea ceremony, and Origami folding. |
