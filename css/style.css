@@ -645,40 +645,6 @@ ul {
   margin-bottom: 2rem;
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  border-top: 1px solid var(--border-light);
-  padding-top: 2rem;
-}
-
-.hero-stat-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-stat-number {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: var(--primary);
-}
-
-@media (min-width: 768px) {
-  .hero-stat-number {
-    font-size: 2.2rem;
-  }
-}
-
-.hero-stat-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 /* Hero Visual Graphic */
 .hero-visual {
   position: relative;
