@@ -1398,6 +1398,44 @@ ul {
   font-size: 0.85rem;
 }
 
+.culture-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.culture-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.culture-list-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 992px) {
+  .culture-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .culture-card {
+    grid-template-columns: 1fr;
+  }
+  .culture-visual {
+    padding: 2.2rem;
+  }
+}
+
 /* --- FUTURE CAREER SECTION --- */
 .career {
   background-color: var(--bg-light);
