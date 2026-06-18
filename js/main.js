@@ -1,5 +1,5 @@
 /**
- * Japan Language & Study Center - Main JS script
+ * Oubaitori Japanese Language School - Main JS script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
