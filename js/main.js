@@ -284,20 +284,31 @@ function initContactForm() {
     });
 
     if (isFormValid) {
-      // Show success feedback
-      if (successFeedback) {
-        successFeedback.textContent = "Konnichiwa! Thank you for contacting us. We will get back to you shortly.";
-        successFeedback.style.display = 'block';
-        form.reset();
-
-        // Scroll to success message
-        successFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-        // Hide feedback after 5 seconds
-        setTimeout(() => {
-          successFeedback.style.display = 'none';
-        }, 5000);
-      }
+      // Submit via AJAX to PHP endpoint
+      fetch('contact.php', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            if (successFeedback) {
+              successFeedback.textContent = data.message || 'Thank you! Your message has been sent.';
+              successFeedback.style.display = 'block';
+              form.reset();
+              successFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              setTimeout(() => {
+                successFeedback.style.display = 'none';
+              }, 5000);
+            }
+          } else {
+            // Show server-side validation errors if any
+            alert(data.message || 'There was an error submitting the form. Please try again later.');
+          }
+        })
+        .catch(() => {
+          alert('Failed to submit the form. Please check your internet connection and try again.');
+        });
     }
   });
 }
